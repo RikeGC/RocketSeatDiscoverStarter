@@ -12,6 +12,7 @@
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(./assets/moon-stars.svg);
+    --filter-profile: invert(0%);
 }
 
 .light{
@@ -22,6 +23,7 @@
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
     --switch-bg-url: url(./assets/sun.svg);
+    /* --filter-profile: invert(100%); */
 }
 
 body{
@@ -56,6 +58,7 @@ body *{
 #profile img{
     width: 112px;
     border-radius: 50%;
+    filter: var(--filter-profile);
 }
 
 #profile p{
